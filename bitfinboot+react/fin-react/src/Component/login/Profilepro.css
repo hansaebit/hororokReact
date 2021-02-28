@@ -1,0 +1,32 @@
+.profileimg{
+    width : 100px;
+    height : 100px;
+    float : left;
+    border-radius: 50px;
+    margin-left: 8%;
+}
+
+.profileTop{
+    width: 100%;
+    height: 100px;
+}
+
+.profileName h3{
+    line-height: 100px;
+    padding-left: 26%;
+}
+
+.pwdBox dt{
+    margin: 10px 0;
+}
+
+.pwdBox dt p{
+    width: 150px;
+    margin: 0;
+    float: left;
+    text-align: right;
+}
+
+.pwdBox dt input{
+    margin-left: 4%;
+}

@@ -1,0 +1,46 @@
+.DetailSubject {
+    width:40%;
+    padding: 15px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.DetailSubject .DetailSubject-bar .DetailSubject-box .DetailSubject-profile .DetailSubject-profile-picture > img{
+    width:50px;
+    height:50px;
+    border-radius:100%;
+}
+
+.DetailSubject .DetailSubject-bar .DetailSubject-box .DetailSubject-profile .DetailSubject-nick {
+    position: absolute;
+    font-weight: bold;
+    font-size: 0.9em;
+    width: 50%;
+    left: 80px;
+    top: 7px;
+}
+.DetailSubject .DetailSubject-bar .DetailSubject-box .DetailSubject-profile .DetailSubject-address {
+    position: absolute;
+    font-size: 0.5em;
+    width: 50%;
+    left: 80px;
+    top: 28px;
+}
+
+.DetailSubject .DetailSubject-bar .DetailSubject-box .DetailSubject-profile .DetailSubject-menu{
+    position: absolute;
+    left: 400px;
+    top: 0px;
+}
+
+.DetailSubject .DetailSubject-bar .DetailSubject-box .DetailSubject-profile{
+    position: relative;
+}
+
+.DetailSubject .DetailSubject-bar .DetailSubject-box .DetailSubject-sub {
+    margin-top: 3%;
+}
+
+.updel_btn{
+    float: right;
+    z-index: 0;
+}

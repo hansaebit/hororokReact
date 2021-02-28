@@ -1,0 +1,40 @@
+ul{
+    margin:0;
+    padding:0;
+}
+
+.Header_container{
+    width:100%;
+    height:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:1px 1px 1px;
+    position:fixed;
+}
+
+
+.Header_wrapper{
+    display:flex;
+    width:1200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header_Icons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+.logo{
+
+    max-height: 80px;
+}
+
+.profilepic{
+
+    border-radius: 15px;
+}
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="boot.dao.MysqlAnswerMapper">
+	<insert id="insertAnswer" parameterType="answer">
+		insert into answer (arnum,amnick,acontent,awriteday)
+		 values (#{arnum},#{amnick},#{acontent},now())
+	</insert>
+	<select id="selectAllOfAnswer" resultType="answer">
+		select * from answer where arnum=#{arnum} order by anum asc;
+	</select>
+	<update id="updateAnswer" parameterType="answer">
+		update answer set acontent=#{acontent} where anum=#{anum}
+	</update>
+	<delete id="deleteAnswer" parameterType="int">
+		delete from answer where anum=#{anum}
+	</delete>
+	<select id="getCommentData" parameterType="int" resultType="answer">
+		select * from answer where anum=#{anum}
+	</select>
+</mapper>

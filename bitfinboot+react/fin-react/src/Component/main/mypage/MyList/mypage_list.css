@@ -1,0 +1,194 @@
+/* 버튼부분 시작 */
+.mypge_list_btn{
+    display:flex;
+    
+    align-items: center;
+    list-style: none;
+    font-size:22px;
+    margin-bottom:25px;
+}
+.mypge_list_btn li{
+    width:100px;
+    text-align: center;
+}
+.mypge_list_btn li a{
+    text-decoration: none;
+    color:gray;
+}
+
+.mypge_list_btn > div{
+    margin-right:10px;
+}
+
+.mypge_list_btn .active_list_btn{
+    color:black;
+    font-weight:bold;
+    border-bottom:3px solid gray;
+}
+
+
+/* 리스트부분 시작 */
+
+.mypage_list_wrapper{
+    margin-top:30px;
+    width:1200px;
+    /* 그리드를 쓸게요. */
+    display:grid;
+    /* 열을 1:1:1 비율로 할게요. px도 쓸수잇써여 */
+    /* grid-template-columns: repeat(3, 1fr); 이렇게 써도 되요.*/
+    grid-template-columns: 1fr 1fr 1fr;
+    /* repeat 바로 뒤 숫자를 auto-fill, auto-fit으로 해줄 수 있어여. */
+    /* grid-template-columns: repeat(auto-fill, minmax(30%,auto)); */
+    /* 행 크기를 최소 300px로 할게요! 최대는 자동이에요! */
+    /* grid-template-rows: repeat(10, minmax(300px, auto)); */
+    /* 자동으로 높이를 지정해줘요~ */
+    grid-auto-rows: minmax(300px, auto);
+    /* 셀 사이의 간격이에요. */
+    /* row-gap:10px; /column-gap:10px; */
+    gap:10px;
+
+}
+
+/* 리스트아이템 */
+.mypage_listitem{
+    border:none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    overflow:hidden;
+    transform: scale(1);
+    transition:0.3s;
+}
+
+/* 이미지 */
+.listitem_img{
+    width:100%;
+    height:300px;
+    overflow:hidden;
+    display:flex;
+    position:relative;
+}
+.listitem_img img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+/* 별 그리기 */
+.listitem_img  span{
+    position:absolute;
+    width:100%;
+    height:30px;
+    margin-left:20px;
+    bottom:20px;
+    font-size:1.5em;
+}
+
+
+
+
+/* 레스토랑이름, 좋아요 */
+.listitem_btn{
+    margin-top:10px;
+    height:30px;
+    display: flex;
+    align-items: center;
+    position:relative;
+}
+.listitem_btn span{
+    font-weight:bold;
+}
+.listitem_btn span:nth-child(1){
+    margin-left:30px;
+    width:300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* 라인수 */
+    -webkit-box-orient: vertical;
+    word-wrap:break-word; 
+}
+.listitem_btn span:nth-child(2){
+    position:absolute;
+    right:40px;
+    top:10px; 
+    z-index:10;
+    cursor:pointer;
+}
+
+.listitem_btn.writeday{
+    margin-top:-12px;
+}
+
+.listitem_btn.writeday span{
+    font-weight:normal;
+    color:gray;
+    font-size:0.8rem;
+    
+}
+
+
+/* 글들어간다~ */
+.listitem_content_wrapper{
+    padding:25px;
+    padding-top:10px;
+    color:black;
+}
+
+/* 타이틀 */
+.listitem_content_wrapper .listitem_title{
+    font-weight:bold;
+    font-size:2.5em;
+    height:1.4em;
+    word-break:break-all;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+/* 콘텐츠 */
+
+.listitem_content_wrapper > a:hover{
+    text-decoration: none;
+}
+
+.listitem_contents{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* 라인수 */
+    -webkit-box-orient: vertical;
+    word-wrap:break-word; 
+    line-height: 1.2em;
+    /* line-height 가 1.2em 이고 3라인을 자르기 때문에 height는 1.2em * 3 = 3.6em */
+    color:black;
+    text-decoration: none;
+}
+
+
+.mypage_listitem:hover{
+    transform: scale(1.02);
+}
+
+
+.hidden_place{
+    display:none;
+}
+
+
+
+
+@media (max-width:1199px){
+    .mypage_list_wrapper{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mypage_listitem{
+        width:90%;
+        margin:5% 5%;
+        
+    }
+
+}

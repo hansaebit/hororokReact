@@ -1,0 +1,12 @@
+.dp-body{
+    display: flex;
+  	justify-content: center;
+}
+
+.dp-box{
+    width: 1180px;
+    border-bottom: 1px solid #eaeaea;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    padding: 0 20px;
+}

@@ -1,0 +1,73 @@
+.prooimg{
+
+    width : 100px;
+    height : 100px;
+    border-radius: 50px;
+}
+
+.picsection{
+
+    padding : 10px;
+    
+}
+
+.picsection{
+
+    height : 100%;
+    
+}
+
+.proimgsec{
+    float : left;
+    height : 100%;
+    width : 20%;   
+}
+
+.piiic{
+
+    width : 80%;
+}
+
+.piic h4{
+
+    font-size: 1.5em;
+}
+
+.profile_img{
+
+    margin-bottom: 5px;
+    
+}
+
+.cmNN{
+    float : left;
+
+}
+
+.cmNN b{
+
+    margin-left: 5%;
+    margin-bottom:20px;
+}
+
+.changeNick{
+    margin-left : 10%;
+    height : 40px;
+    width : 400px;
+}
+
+.changeintro{
+
+    margin-top: 20px;
+    height : 40px;
+    width : 400px;
+    margin-left : 10%;
+    
+}
+
+.cmbtn{
+
+    margin-top : 20px;
+    margin-left : 10%;
+    
+}

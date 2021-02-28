@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="boot.dao.MysqlMemberMapper">
+	<select id="getData" parameterType="String" resultType="Member">
+      select * from member m,follower f where m.mnum=f.fmnum and mnum=#{mnum}
+   </select>
+   <select id="getFollowing" parameterType="String" resultType="Member">
+      select * from member m,follower f where m.mnum=f.follower and m.mnum=#{mnum}
+   </select>
+   <insert id = "insertMem" parameterType ="Member">
+   		insert into member (memailid,mnick,mpw) values (#{memailid},#{mnick},#{mpw})
+   </insert>
+   <select id="checkEmail" parameterType="String" resultType="int">
+      select count(*) from member m where m.memailid=#{memailid}
+   </select>
+   <select id="checkNick" parameterType="String" resultType="int">
+      select count(*) from member m where m.mnick=#{mnick}
+   </select>
+   <select id="LoginCheck" parameterType="Member" resultType="Member">
+      select * from member m where m.memailid=#{memailid} and m.mpw = #{mpw}
+   </select>
+   <update id="UpdatePsw" parameterType="Member">
+      update member set mpw= #{mpw} where mnum =#{mnum}
+   </update>
+   <update id="UpdateProfile" parameterType="Member">
+      update member set mpic= #{mpic} where mnum =#{mnum}
+   </update>
+   <update id="UpdateMintro" parameterType="Member">
+      update member set mintro= #{mintro} where mnum =#{mnum}
+   </update>
+</mapper>

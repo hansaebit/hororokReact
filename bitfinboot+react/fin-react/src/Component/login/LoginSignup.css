@@ -1,0 +1,283 @@
+@media screen and (min-width : 1200px){
+
+    .Signupmm{
+
+        display : flex;
+        margin-top : 60px;
+        text-align : center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+   
+    .Signupsection{
+
+        margin-left : 30px;
+        width : 450px;
+        height : 120%;
+        padding : 20px;
+        border: 1px solid gray;
+        box-shadow: 0px 5px 10px 0px gray;
+        background-color: #fdfdfd;
+
+
+    }
+
+    .SignupForm{
+        padding : 15px;
+        border : 1px solid black;
+        
+    }
+
+    .Signupemail{
+        margin-top: 10px;
+        width : 100%;
+        height : 50px;
+        margin-bottom : 7px;
+    }
+
+    .Signuppsw{
+        margin-top: 10px;
+        width : 100%;
+        height : 50px;
+        
+    }
+
+    .Signupnick{
+
+        margin-top: 10px;
+        width : 100%;
+        height : 50px;
+        margin-bottom : 7px;
+    }
+
+    .Signuppswcc{
+        margin-top: 10px;
+        width : 100%;
+        height : 50px;
+
+    }
+
+
+    
+    .Signupbtn{
+
+        margin-top : 60px;
+        margin-bottom : 10px;
+        background-color: white;
+        width : 70%;
+        height : 50px;
+    }
+
+    .Signupbot{
+        margin-top : 15px;
+
+        height : 100px;
+        text-align: center;
+        
+    }
+
+    .Signinbtn{
+
+        margin-top : 60px;
+        height : 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border :  1px solid #ddd;
+        
+    }
+
+    .checkEmailbtn{
+
+        background-color: white;
+        width : 30%;
+        height : 50px;
+
+    }
+
+
+}
+
+/*tablet version*/
+@media screen and (min-width : 768px)and (max-width : 1199px){
+
+    .Signupmm{
+
+        display : flex;
+        margin-top : 60px;
+        text-align : center;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+   
+    
+    .Signupsection{
+
+        margin-left : 30px;
+        width : 450px;
+        height : 600px;
+        padding : 10px 20px 10px 20px;
+
+    }
+
+    .SignupForm{
+        padding : 15px;
+        
+        
+    }
+
+    .Signupemail{
+        margin-top: 10px;
+        width : 100%;
+        height : 50px;
+    }
+
+    .Signuppsw{
+        margin-top: 10px;
+        width : 100%;
+        height : 50px;
+    }
+
+    
+    .Signupnick{
+
+        margin-top: 10px;
+        width : 100%;
+        height : 50px;
+    }
+
+    .Signuppswcc{
+        margin-top: 10px;
+        width : 100%;
+        height : 50px;
+
+    }
+
+
+    
+    .Signupbtn{
+
+        margin-top: 10px;
+
+        width : 100%;
+        height : 50px;
+    }
+
+    .Signupbot{
+        margin-top : 15px;
+
+        height : 100px;
+        text-align: center;
+        
+    }
+
+    .Signinbtn{
+
+        margin-top : 60px;
+        height : 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border :  3px solid black;
+        
+    }
+
+
+
+}
+
+
+
+
+@media screen and (max-width : 767px){
+
+    .Signupmm{
+
+        display : flex;
+        margin-top : 60px;
+        text-align : center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+   
+    
+    .Signupsection{
+
+        margin-left : 30px;
+        width : 450px;
+        height : 600px;
+
+    }
+
+    .SignupForm{
+        padding : 15px;
+        border : 1px solid black;
+        
+    }
+
+    .Signupemail{
+        margin-top: 10px;
+        width : 100%;
+        height : 50px;
+    }
+
+    .Signuppsw{
+        margin-top: 10px;
+        width : 100%;
+        height : 50px;
+    }
+    
+    .Signupnick{
+
+        margin-top: 10px;
+        width : 100%;
+        height : 50px;
+    }
+
+    .Signuppswcc{
+        margin-top: 10px;
+        width : 100%;
+        height : 50px;
+
+    }
+
+
+    .Signupbtn{
+
+        margin-top: 10px;
+
+        width : 100%;
+        height : 50px;
+    }
+
+
+    .Signupbot{
+        margin-top : 15px;
+
+        height : 100px;
+        text-align: center;
+        
+    }
+
+    .Signinbtn{
+
+        margin-top : 60px;
+        height : 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border :  3px solid black;
+        
+    }
+
+
+
+}
+

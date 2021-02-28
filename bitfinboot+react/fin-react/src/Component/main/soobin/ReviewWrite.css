@@ -1,0 +1,223 @@
+/* 
+
+.insertbtn{
+    text-align: center;
+    
+}
+
+.insert_btn{
+    width: 500px;
+}
+
+.content{
+    width: 800px;
+    height: 200px;
+    margin-top: 23px;
+}
+.main_insert{
+    width: 1200px;
+    height: 110vh;
+    margin: 0 auto;
+    border: 1px solid;
+}
+.insert_start{
+    text-align: center;
+}
+
+.insert_detail1{
+    
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+} 
+
+.insert_detail2{
+    
+    width: 300px;
+    height: 50px;
+    border: 1px solid;
+    margin-top: 5px;
+    margin-left: 400px;
+    float: left;
+} 
+
+.insert_detail3{
+    
+    width: 200px;
+    height: 50px;
+    border: 1px solid;
+    margin-top: 5px;
+    margin-left: 235px;
+    float: left;
+} 
+
+.insert_detail4{
+    
+    width: 292px;
+    height: 252px;
+    border: 1px solid;
+    margin-top: 20px;
+    margin-left: 5px;
+    float: left;
+} 
+
+
+
+.insert_detail5{
+    
+    width: 1190px;
+    height: 250px;
+    border: 1px solid;
+    margin-top: 20px;
+    margin-left: 5px;
+    float: left;
+} 
+
+.insert_detail6{
+    
+    width: 1190px;
+    height: 100px;
+    border: 1px solid;
+    margin-top: 20px;
+    margin-left: 5px;
+    float: left;
+} 
+
+.insert_detail7{
+    
+    width: 1190px;
+    height: 300px;
+    border: 1px solid;
+    margin-top: 20px;
+    margin-left: 5px;
+    float: left;
+} 
+
+.sel_check{
+    margin-top: 0px;
+}
+
+.file_check{
+    font-size: 0.78em;
+    margin-top: 2px;
+}
+
+#preview-container{
+    margin-top: 3px;
+}
+
+#preview-container *{
+    width: 292px;
+    height: 252px;
+    
+    margin-top: 20px;
+    margin-left: 5px;
+    float: left;
+} */
+
+
+
+.review_con{
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.review_insertcon{
+    width: 1200px;
+    padding: 0 20px;
+    margin: 10px 10px;
+}
+
+.score_sel{
+    float: left;
+}
+
+.category_sel{
+    margin-left: 70px;
+}
+
+.content_form{
+    width: 1200px;
+}
+
+.board_content{
+    margin-top: 10px;
+    width: 1150px;
+    border: #ddd;
+}
+
+.image_preview_con{
+    
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.image_preview_con img{
+    width: 350px;
+    height: 460px;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.photo_btn{
+    float: left;
+    width: 50px;
+    
+}
+
+.addr_btn{
+    float: left;
+    margin-left: 10px;
+    float: left;
+    width: 50px;
+   
+}
+
+.insert_resname{
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    
+}
+
+.insert_resname input{
+    border: none;
+    border-bottom: 1px solid #ddd;
+    width: 150px;
+}
+
+.insert_resaddr{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.insert_resaddr input{
+    border: none;
+    border-bottom: 1px solid #ddd;
+    width: 250px;
+}
+
+.insert_btn{
+    margin-left: 1100px;
+    width: 50px;
+    
+}
+
+.x_sign{
+    position: absolute;
+    left:-40px;
+    top:-210px;
+    z-index: 1;
+}
+
+.line{
+    margin-left: 2px;
+    width: 1150px;
+}

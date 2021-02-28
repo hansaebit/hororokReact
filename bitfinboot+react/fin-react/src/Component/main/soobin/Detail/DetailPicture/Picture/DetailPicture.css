@@ -1,0 +1,38 @@
+.DetailPicture {
+    margin:0;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: black;
+}
+.slide-list-bar {
+    width:100%;
+}
+
+.slide-list-bar .slide-list-box {
+    width: 100%;
+}
+.slide-list-bar .slide-list-box .slide-list-itme{
+    width: 100%;
+ }
+.slide-list-bar .slide-list-box img {
+   width: auto;
+   height:500px;
+   margin: 0 auto;
+}
+
+.slick-dots {
+    position: absolute;
+    top: 470px;
+    
+}
+.slick-dots > li > button::before {
+    opacity: 0.5;
+    color: white;
+}
+
+.slick-prev::before { 
+    color: white
+}
+.slick-next::before {
+    color: white
+}

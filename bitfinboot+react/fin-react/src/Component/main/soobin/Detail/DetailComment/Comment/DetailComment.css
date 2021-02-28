@@ -1,0 +1,30 @@
+.DetailComment {
+
+}
+
+.DetailComment .DetailComment-bar {
+
+}
+
+.DetailComment .DetailComment-bar .comment {
+
+}
+
+.DetailComment .DetailComment-bar .comment .new_comment {
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.DetailComment .DetailComment-bar .comment .write_newComment {
+    width: 90%;
+}
+
+.DetailComment .DetailComment-bar .comment .upload_button {
+    width: 10%;
+    font-weight: bold;
+}
+
+.DetailComment .DetailComment-bar .comment_wrapper {
+    padding: 1.2%;
+}

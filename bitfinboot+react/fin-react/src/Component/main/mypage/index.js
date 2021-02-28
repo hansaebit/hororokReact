@@ -1,0 +1,1 @@
+export { default as mypage } from './mypage';

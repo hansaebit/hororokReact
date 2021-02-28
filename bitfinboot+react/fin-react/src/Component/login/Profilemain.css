@@ -1,0 +1,52 @@
+.profileaa{
+    margin-top : 4%;
+    display : flex;
+    float : left;
+    justify-content: center;
+    align-items: center;
+    width : 100%;
+    height : 100%;
+}
+
+.profilemenu{
+
+    width : 16%;
+    height: 600px;
+    border: 1px solid #eee;
+}
+
+.list_btn{
+    list-style: none;
+    padding : 0px;
+}
+.list_btn li{
+    height : 80px;
+    text-decoration: none;
+    text-align :left;
+    font-size : 1em; 
+    line-height: 80px;
+    padding-left: 20px;
+}
+
+.list_btn li:active{
+    border-left: 3px solid salmon;
+}
+
+.list_btn li a{
+    text-decoration: none;
+    color: black;
+}
+
+.profilecontents{
+    padding: 30px;
+    width : 50%;
+    height: 600px;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.profile_preview{
+
+    max-width : 200px;
+}

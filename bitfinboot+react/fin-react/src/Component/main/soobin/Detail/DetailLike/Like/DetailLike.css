@@ -1,0 +1,21 @@
+
+.DetailLike {
+
+}
+.DetailLike .DetailLike-bar {
+    width:100%;
+    height:100%;
+}
+.DetailLike .DetailLike-bar .DetailLike-box {
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    margin-top: -15px;
+}
+
+.DetailLike .DetailLike-bar .DetailLike-box > span{
+    margin-left: 1%;
+    cursor: pointer;
+}

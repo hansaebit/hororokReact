@@ -1,0 +1,237 @@
+body{
+    width:100%;
+    margin:0;
+    overflow-y:scroll;
+}
+
+a{
+    text-decoration:none;
+}
+
+/* 전체 컨테이너 */
+.mypage_container{
+    margin-top:20px;
+}
+/* 히든플레이스 */
+div.hidden_place{
+    display:none;
+}
+
+/* 프로필 컨테이너 */
+.profile_container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.profile_wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:1200px;
+    /* box-shadow:0px 0px 5px rgba(0,0,0,0.3); */
+    
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+
+}
+
+/* 사진 */
+.profile_image{
+    width:150px;
+    height:150px;
+    border-radius: 70%;
+    overflow:hidden;
+    margin-right:100px;
+    display:flex;
+}
+.profile_image img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+/* 프로필 위치 */
+.profile_place{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:800px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+/* 프로필의 이름, 버튼위치 */
+.profile_nameplace{
+    display:flex;
+    align-items: center;
+}
+.profile_nameplace h1{
+    font-size: 2rem;
+    margin-bottom:15px;
+}
+.profile_nameplace button.profile_edit{
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin-left:20px;
+    margin-bottom:10px;
+    background-color:white;
+}
+
+/* 팔로우 취소 */
+.profile_nameplace button.followno_btn{
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin-left:20px;
+    margin-bottom:10px;
+    background-color:white;
+
+}
+/* 팔로우 */
+.profile_nameplace button.follow_btn{
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin-left:20px;
+    margin-bottom:10px;
+    background-color:white;
+
+}
+
+
+/* 게시물, 팔로우, 팔로워 */
+.profile_information{
+    display:flex;
+    align-items: center;
+}
+/* 팔로우모달 */
+.profile_information .profile_information_follow{
+    cursor: pointer;
+}
+
+.profile_information div{
+    width:150px;
+    height:50px;
+    display:flex;
+    align-items: center;
+}
+
+.profile_information div b{
+    margin-left:10px;
+}
+
+/* 자기소개 */
+.profile_introduce{
+    margin-top:20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 10; /* 라인수 */
+    -webkit-box-orient: vertical;
+    word-wrap:break-word; 
+    line-height: 1.2em;
+    /* line-height 가 1.2em 이고 3라인을 자르기 때문에 height는 1.2em * 3 = 3.6em */
+}
+
+/* 리스트 버튼 */
+.mypge_list_btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size:22px;
+    margin-top:40px;
+    margin-bottom:25px;
+}
+.mypge_list_btn li{
+    width:100px;
+    text-align: center;
+    margin-right:30px
+}
+.mypge_list_btn li a{
+    text-decoration: none;
+    color:gray;
+}
+.mypge_list_btn li b{
+    display:none;
+}
+.mypge_list_btn .active_list_btn{
+    color:black;
+    font-weight:bold;
+    border-bottom:3px solid gray;
+}
+.mypge_list_btn .active_list_btn b{
+    display:inline
+}
+
+.Mypge_list_show{
+    display:flex;
+    justify-content: center;
+}
+
+.Mypage_list_footer{
+    height:200px;
+}
+
+
+
+@media (max-width:1199px){
+
+    .profile_wrapper{
+        width:100%;
+        flex-direction:column;
+    }
+    .mypge_list_btn{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        font-size:18px;
+        margin-top:40px;
+        margin-bottom:25px;
+    }
+    .mypge_list_btn li{
+        width:100px;
+        text-align: center;
+        margin-right:10px
+    }
+    .profile_image{
+        width:200px;
+        height:200px;
+        border-radius: 70%;
+        margin:0;
+        overflow:hidden;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile_image img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+
+    .profile_place{
+        width:100%;
+        display:flex;
+    }
+
+    .profile_nameplace{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .profile_information{
+        display:flex;
+        justify-content: center;
+    }
+
+    .profile_information div{
+        display:flex;
+        justify-content: center;
+    }
+
+    .profile_introduce{
+        margin:20px;
+    }
+
+}

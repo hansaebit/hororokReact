@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="boot.dao.MysqlFollowMapper">
+	<select id="getFollowData" parameterType="int" resultType="follow">
+		select * from follower f,member m where f.follower = m.mnum and f.fmnum = #{mnum}
+	</select>
+	<select id="getFollowingData" parameterType="int" resultType="follow">
+		select * from follower f,member m where f.fmnum = m.mnum and f.follower = #{mnum}
+	</select>
+</mapper>

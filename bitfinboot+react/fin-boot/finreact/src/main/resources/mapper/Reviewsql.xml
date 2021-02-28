@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="boot.dao.MysqlReviewMapper">
+	<!-- 리뷰총갯수 -->
+	<select id="getTotalCount" resultType="int">
+		select count(*) from review
+	</select>
+ 	<select id="getAllDatas"  resultType="review">
+      select * from review order by rwriteday desc
+ 	</select>
+	<select id="getData" parameterType="String" resultType="review">
+		select * from review a,restaurant b,member c where a.rnum=b.revnum and a.rmnum=c.mnum and rnum = #{rnum};
+	</select>
+	<!-- 로그인한사람이 팔로잉한 사람들 리뷰보기 -->
+	<select id="getPostDatas" parameterType="String" resultType="review">
+ 		select * from review r, follower f, member m where r.rmnum = f.fmnum and f.follower = m.mnum and m.mnum= #{mnum} order by r.rwriteday desc
+ 	</select>
+ 	<!-- 리뷰넘버로 리뷰가져오기 -->
+ 	<select id="selectNumOfReview" parameterType="int" resultType="review">
+		select * from review a,restaurant b,member c where a.rnum=b.revnum and a.rmnum=c.mnum and rnum = #{rnum};
+
+	</select> 
+	<!-- 리뷰의 사진가져오기 -->
+ 	<select id="getPicOfReview" parameterType="String" resultType="review">
+ 		 select * from review r, repic p where r.rnum = p.pirnum and r.rnum = #{rnum}
+ 	</select>
+ 	<!-- 리뷰의 식당정보가져오기 -->
+ 	<select id="getResInfoOfReview" parameterType="String" resultType="review">
+ 		 select * from review r, restaurant res where r.rnum = res.revnum and r.rnum = #{rnum}
+ 	</select>
+ 	<!-- 리뷰의 해시태그가져오기 -->
+ 	<select id="getHashtagOfReview" parameterType="String" resultType="review">
+ 		 select * from review r, hashtag h where r.rnum = h.crnum and r.rnum = #{rnum}
+ 	</select>
+ 	<!-- 리뷰의  최신 댓글 1개만 가져오기-->
+ 	<select id="getAnswerOfReview" parameterType="String" resultType="Answer">
+ 		select * from answer a,member m where m.mnick = a.amnick and a.arnum = #{rnum} order by a.awriteday desc limit 1
+ 	</select>
+	<!-- 리뷰의 좋아요 가져오기 -->
+	<select id="getLikesOfReview" parameterType="String" resultType="int">
+		select count(*) from likere l, review r where l.lrnum=#{rnum}
+	</select>
+	<!-- 팔로우 포스팅리스트-->	
+	<select id="getFollpostData" parameterType="String" resultType="review">
+		select * from member m, review r, restaurant res, repic p where r.rnum=#{rnum} and res.revnum=r.rnum and  m.mnum=r.rmnum and p.pirnum= r.rnum
+	</select>
+	<!-- 주소로 검색 -->
+	<select id = "searchAddrOfReview" parameterType ="String" resultType ="review" >
+ 	 select * from review r, restaurant res where res.resaddr like '%강남%' and r.rnum =res.revnum order by r.rwriteday desc;
+ 	 <!-- select * from restaurant res,review r where res.revnum=rnum and res.resaddr like ('%', #{keyword}, '%') order by r.rwriteday desc; -->
+	</select>
+
+	
+	
+	
+	
+	<!-- insert -->
+	<insert id = "insertReview" parameterType ="review">
+   		insert into review (rmnum,rcontent,rscore,rwriteday,rcategory) values (#{rmnum},#{rcontent},#{rscore},now(),#{rcategory})
+   </insert>
+   <select id="getRnumber"  resultType="int">
+   		select * from review where rmnum=#{rmnum} order by rnum  desc limit 1
+   </select>
+   <insert id = "insertRestaurant" parameterType ="review">
+   		insert into restaurant (revnum,resname,resaddr) values (#{revnum},#{resname},#{resaddr})
+   </insert>
+   <insert id = "insertRepic" parameterType ="review">
+   		insert into repic (pirnum,picname) values (#{pirnum},#{picname})
+   </insert>
+   <insert id = "insertHashtag" parameterType ="review">
+   		insert into hashtag (crnum,hashtag) values (#{crnum},#{hashtag})
+   </insert>
+   <select id="getContent" parameterType="String" resultType="review">
+   		select * from review where rnum=#{rnum}
+   </select>
+   
+
+
+
+	<!-- 삭제 -->
+	<delete id="deleteReview" parameterType="String">
+		delete from review where rnum=#{rnum}
+	</delete>
+	<delete id="deleteRestaurant" parameterType="String">
+		delete from restaurant where revnum=#{revnum}
+	</delete>
+	<!-- 파일명구하기 -->
+	<select id="getPhotoname" parameterType="String" resultType="review">
+		select picname from repic where pirnum=#{pirnum}
+	</select>
+	
+
+
+
+
+</mapper>

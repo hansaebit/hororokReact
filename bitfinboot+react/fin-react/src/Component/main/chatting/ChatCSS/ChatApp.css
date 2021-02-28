@@ -1,0 +1,25 @@
+@media screen and (min-width : 1200px){
+    
+    .ChatAppBox{
+        display: flex;
+        margin-top: 2%; 
+        border:1px solid #eee;
+        justify-content: center;
+        flex-direction: row;
+        height: 100%;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .ChatAppBox .sidePanel{
+        width: 300px;
+        overflow: auto;
+    }
+
+    .ChatAppBox .mainPanel{
+        width: 100%;
+        flex: 1;
+        overflow: auto;
+    }
+
+}
